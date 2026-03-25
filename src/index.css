@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Thin scrollbar for list / detail panels */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #e5e7eb;
+    border-radius: 2px;
+  }
+}
+
+/* Prose styles for the injected description_html */
+.job-description {
+  color: #374151;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+.job-description h1,
+.job-description h2,
+.job-description h3,
+.job-description h4 {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.job-description h2 { font-size: 1.125rem; }
+.job-description h3 { font-size: 1rem; }
+.job-description p  { margin-bottom: 0.875em; }
+.job-description ul,
+.job-description ol {
+  padding-left: 1.5em;
+  margin-bottom: 0.875em;
+}
+.job-description ul { list-style-type: disc; }
+.job-description ol { list-style-type: decimal; }
+.job-description li { margin-bottom: 0.25em; }
+.job-description strong { font-weight: 600; color: #111827; }
+.job-description a {
+  color: #e72518;
+  text-decoration: underline;
+}
+.job-description a:hover { color: #c21a0f; }
